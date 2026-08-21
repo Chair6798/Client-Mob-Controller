@@ -1,0 +1,26 @@
+/myclientcommand
+/summon minecraft:cat ~ ~ ~ {CustomName:"Chair6798_cat"}
+/myclientcommand
+/be minecraft:cat
+/be cat
+/gamemode creative
+/kill @e[type=!minecraft:player]
+/gamerule spawn_monsters false
+/kill @e[type=!minecraft:player]
+/be minecraft:cat
+/be cat
+/me cat
+/be cat
+/be
+/time set day
+/be cat
+/effect give @s minecraft:invisibility infinite
+/effect give @s minecraft:invisibility infinite 1 true
+/kill @e[type=cat]
+/be dog
+/be cat
+/kill @e[type=cat]
+/be dog
+/be wolf
+/kill @e[type=wolf]
+/be cat

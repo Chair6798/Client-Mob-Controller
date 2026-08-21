@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "client_mob_controller",
+  "version": "${version}",
+  "name": "Client Mob Controller",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/client_mob_controller/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.coolchair.client_mob_controller.client.Client_mob_controllerDataGenerator"
+    ],
+    "client": [
+      "org.coolchair.client_mob_controller.client.Client_mob_controllerClient"
+    ],
+    "main": [
+      "org.coolchair.client_mob_controller.Client_mob_controller"
+    ]
+  },
+  "mixins": [
+    "client_mob_controller.mixins.json",
+    {
+      "config": "client_mob_controller.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
